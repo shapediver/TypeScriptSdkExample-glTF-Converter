@@ -43,5 +43,5 @@ If you want to plug this to your own codebase, copy the functionality from [src/
 
 ## How to get support
 
-
-
+[Help Center](https://help.shapediver.com/)
+[Community and Support](https://help.shapediver.com/doc/community-and-support)
