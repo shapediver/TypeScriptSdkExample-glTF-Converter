@@ -25,6 +25,8 @@ npm run cli -- glTF-Converter.3dm glTF-Converter.glb
 
 This converts the input file `glTF-Converter.3dm` to the output binary glTF `glTF-Converter.glb`. 
 
+You can view the resulting glTF file by dragging & dropping it onto the [glTF monster](https://viewer.shapediver.com/v3/latest/gltf/index.html).
+
 ## Reuse the code
 
 If you want to plug this to your own codebase, copy the functionality from [src/convert.ts](src/convert.ts).

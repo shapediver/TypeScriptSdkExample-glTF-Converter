@@ -64,9 +64,10 @@ export async function convert(options: ConvertOptions): Promise<void> {
         console.debug(JSON.stringify(computationResponse.outputs, null, 2));
         throw new Error('No resulting glTF file found');
     }
+    const item = outputResult.content!.find(c => c.contentType === 'model/gltf-binary');
 
     // download glTF file into buffer
-    const buffer = (await sdk.utils.download(outputResult.content![0].href!, ShapeDiverSdkApiResponseType.DATA))[1];
+    const buffer = (await sdk.utils.download(item!.href!, ShapeDiverSdkApiResponseType.DATA))[1];
     
     // Write buffer to file at filepathOut
     await fs.writeFile(filepathOut, new DataView(buffer));
