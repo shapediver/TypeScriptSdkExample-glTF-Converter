@@ -1,4 +1,4 @@
-import 'dotenv/config'
+import 'dotenv/config';
 import { convert } from './convert.js';
 
 async function cli() {
@@ -13,7 +13,9 @@ async function cli() {
     const modelViewUrl = process.env.MODEL_VIEW_URL;
     const ticket = process.env.BACKEND_TICKET;
     if (!modelViewUrl || !ticket) {
-        console.error('MODEL_VIEW_URL and BACKEND_TICKET environment variables must be set in .env file');
+        console.error(
+            'MODEL_VIEW_URL and BACKEND_TICKET environment variables must be set in .env file'
+        );
         process.exit(1);
     }
 
